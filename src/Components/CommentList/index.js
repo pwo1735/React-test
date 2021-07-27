@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Comment from './Comment'
-import accordion from '../../decorators/accordion';
-
+import accordion from '../../decorators/accordion'
+import './style.css'
 
 class CommentList extends Component {
 
     render() {
         return (
             <div className="comments">
-                <button className = "btn btn-primary btn-lg" onClick = {this.props.handleClick} style = {{margin: '20px'}}>Comments</button>
+                <button className = "comments__btn btn btn-primary btn-lg" onClick = {this.props.handleClick} >Comments</button>
                 {this.props.isOpen && this.body}
             </div>
         )
@@ -16,7 +16,6 @@ class CommentList extends Component {
 
     get body() {
         const { comments } = this.props
-        console.log(comments)
 
         const body = comments && comments.length ? (
             

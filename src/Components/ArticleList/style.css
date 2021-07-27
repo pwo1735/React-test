@@ -6,3 +6,9 @@
 .card-hader {
     padding: 15px;
 }
+.card-hader__title {
+    margin-bottom: 15px;
+}
+.card-text {
+    margin-bottom: 15px;
+}

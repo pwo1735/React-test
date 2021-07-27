@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import CommentList from '../CommentList';
-import accordion from '../../decorators/accordion';
+import React, { Component } from 'react'
+import CommentList from '../CommentList'
+import accordion from '../../decorators/accordion'
 
 class Article extends Component {
     state = {
@@ -23,7 +23,7 @@ class Article extends Component {
             
             <div className="card mx-auto" style = {{margin: '20px'}}>
                 <div className="card-hader">
-                    <h2>{article.title}</h2>
+                    <h2 className="card-hader__title">{article.title}</h2>
                     <button onClick={this.props.handleClick} className = "btn btn-primary btn-lg">{this.props.isOpen ? 'Close' : 'Open'}</button>
                 </div>
                 {this.body}

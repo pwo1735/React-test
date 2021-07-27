@@ -1,0 +1,11 @@
+.comments__btn {
+    margin-bottom: 15px;
+}
+.comment__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.rdp {
+    display: flex;
+    justify-content: center;
+}

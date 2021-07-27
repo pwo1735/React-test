@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Comment extends Component {
     render () {
@@ -13,9 +13,9 @@ class Comment extends Component {
         const {comment} = this.props
         
         return (
-            <div className="article-list__comment">
-                <div className = "article-list__comment-user">{comment.user}</div>
-                <div className = "article-list__comment-text">{comment.text}</div>
+            <div>
+                <div className = "comment__user">{comment.user}</div>
+                <div className = "comment__text">{comment.text}</div>
                 
                 
             </div>
